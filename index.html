@@ -3,11 +3,65 @@
     <head>
       <title>My homepage</title>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        html{
+          min-height: 100%;
+        }
+        body{
+          padding-top: 40px;
+          padding-bottom: 40px;
+          background: linear-gradient(180deg, #003f5b, #00556a, #006a6a, #007e59, #1a8f3c, #6d9c0e, #b5a000, #ff9913); /* made at https://learnui.design/tools/gradient-generator.html */
+          min-height: 100%;
+          color: rgba(255, 255, 255, 1.0);
+        }
+        .avatar-image{width:128px;height:128pxl;
+          object-fit:cover;  
+          border-radius:128px; 
+        }
+        .thumbnail{
+          width:80px;
+          height:80px;
+          object-fit:cover;
+        }
+        a{
+          color: rgba(255, 255, 255, 1.0);
+        }
+        .item{
+          background-color:rgba(52, 39, 245, 0.76);
+          margin-bottom:30px;
+          display:flex;
+          align-items:center;
+        }
+        .main-container{
+          max-width:640px;
+          margin:auto;
+        }
+        .image-row{
+          margin-bottom:20px;
+          text-align:center;
+        }
+        .name-row{
+          margin-bottom:30px;
+          text-align:center;
+        }
+        .social-icons-row{
+          margin-bottom:30px;
+          display:flex;
+          justify-content:space-around;
+        }
+        .link-text{
+          text-align:center;
+          flex-grow:1
+        }
+
+
+      </style>
     </head>
     <body>
       <div class="main-container">
         <div class="image-row">
-          <img src="/ProfileExApp.jpg" alt="Profile photo">
+          <img class="avatar-image" src="/ProfileExApp.jpg" alt="Profile photo">
         </div>
         <div class="name-row">
           Rhys Beauchamp
@@ -18,16 +72,16 @@
         </div>
         <div class="links-row">
           <div class="item">
-            <img src="/KeiServe.jpg" alt="Kei Nishikori serving">
-            <a target="_blank" href="https://www.youtube.com/watch?v=7bIVC0jQfGY"> Watch Kei Nishikor's Serve</a>
+            <img class="thumbnail" src="/KeiServe.jpg" alt="Kei Nishikori serving">
+            <a class="link-text"target="_blank" href="https://www.youtube.com/watch?v=7bIVC0jQfGY"> Watch Kei Nishikor's Serve</a>
           </div>
           <div class="item">
-            <img src="/TigerSwing.jpg" alt="Tiger Woods swinging">
-            <a target="_blank" href="https://www.youtube.com/watch?v=EmLyMDyCbto">Watch Tiger's Swing</a>
+            <img class="thumbnail" src="/TigerSwing.jpg" alt="Tiger Woods swinging">
+            <a class="link-text" target="_blank" href="https://www.youtube.com/watch?v=EmLyMDyCbto">Watch Tiger's Swing</a>
           </div>
           <div class="item">
-            <img src="/Kobe_Bryant_2014.jpg" alt="Kobe">
-            <a target="_blank" href="https://x.com/BallStOfficial/status/1454265725783134208">Read Kobe's tweet</a>
+            <img class="thumbnail" src="/Kobe_Bryant_2014.jpg" alt="Kobe">
+            <a class="link-text" target="_blank" href="https://x.com/BallStOfficial/status/1454265725783134208">Read Kobe's tweet</a>
           </div>
         </div>
       </div>
