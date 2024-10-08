@@ -1,6 +1,10 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
       <title>My homepage</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +18,7 @@
           background: linear-gradient(180deg, #003f5b, #00556a, #006a6a, #007e59, #1a8f3c, #6d9c0e, #b5a000, #ff9913); /* made at https://learnui.design/tools/gradient-generator.html */
           min-height: 100%;
           color: rgba(255, 255, 255, 1.0);
+          font-family:"Quicksand";
         }
         .avatar-image{width:128px;height:128pxl;
           object-fit:cover;  
@@ -23,15 +28,21 @@
           width:80px;
           height:80px;
           object-fit:cover;
+          margin-left:40px;
         }
         a{
           color: rgba(255, 255, 255, 1.0);
+          text-decoration:none;
         }
         .item{
           background-color:rgba(52, 39, 245, 0.76);
           margin-bottom:30px;
           display:flex;
           align-items:center;
+          border-radius:1000px;
+          padding: 5px;
+          padding-right: 93px;
+          box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
         }
         .main-container{
           max-width:640px;
@@ -42,8 +53,11 @@
           text-align:center;
         }
         .name-row{
+          font-family:"Lora";
           margin-bottom:30px;
           text-align:center;
+          font-size:30px;
+          font-weight:700;
         }
         .social-icons-row{
           margin-bottom:30px;
@@ -67,8 +81,10 @@
           Rhys Beauchamp
         </div>
         <div class="social-icons-row">
-          <a target="_blank" href="https://www.instagram.com/rhysabeauchamp/">Instagram</a>
-          <a target="_blank" href="https://github.com/rbeau12">Github</a>
+          <a target="_blank" href="https://www.instagram.com/rhysabeauchamp/">
+            <i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a target="_blank" href="https://github.com/rbeau12">
+            <i class="fa-brands fa-github"></i>Github</a>
         </div>
         <div class="links-row">
           <div class="item">
